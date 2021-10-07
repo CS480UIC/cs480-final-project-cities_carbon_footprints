@@ -30,27 +30,34 @@ RELATIONSHIP MAXIMA AND MINIMA
 
 MINIMA
 Relationship: Emission
+
 Carbon_Emission ------> Vehicle
+
 Carbon_Emission ------> Public Transit
+
 Carbon_Emission ------> Factory
 
 
 MAXIMA
 Relationship:  CityName & population
+
 City --------> Vehicle
+
 City --------> Public_Transit
+
 City --------> Factory
 
 
-ATRIBUTE MAXIMA AND MINIMA
+ATTRIBUTE MAXIMA AND MINIMA
 
-ATRIBUTE MAXIMA
+ATTRIBUTE MAXIMA
 
 Singular: CityName
+
 Plural: Population, MostUsedTransportation, NumberOfFactories, TotalMilesperGallon, TotalNumberofDrivers,TotalNumberofUser,NumberofEmployee,
 Unique:CityName, TotalUsage,
 
-ATRIBUTE MINIMA
+ATTRIBUTE MINIMA
 
 Required:CityName, VehicleType, TransitType, FactoryName,FactoryCity,EmissionType
 Optional:NumberOfFactories, Vehicle-Transit & FactoryEmissionPercent
