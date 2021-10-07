@@ -46,7 +46,7 @@ ATRIBUTE MAXIMA AND MINIMA
 
 ATRIBUTE MAXIMA
 
-Singular: CityName,
+Singular: CityName
 Plural: Population, MostUsedTransportation, NumberOfFactories, TotalMilesperGallon, TotalNumberofDrivers,TotalNumberofUser,NumberofEmployee,
 Unique:CityName, TotalUsage,
 
