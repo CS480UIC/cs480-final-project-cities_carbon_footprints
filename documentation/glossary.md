@@ -42,6 +42,20 @@ City --------> Public_Transit
 City --------> Factory
 
 
+ATRIBUTE MAXIMA AND MINIMA
+
+ATRIBUTE MAXIMA
+
+Singular:
+Plural:
+Unique
+
+ATRIBUTE MINIMA
+
+Required:
+Optional:
+
+
 
 
 
