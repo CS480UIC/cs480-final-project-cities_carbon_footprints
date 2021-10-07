@@ -47,13 +47,13 @@ ATRIBUTE MAXIMA AND MINIMA
 ATRIBUTE MAXIMA
 
 Singular: CityName,
-Plural: Population, MostUsedTransportation, NumberOfFactories, TotalMilespergallon, TotalNumberofDrivers,TotalNumberofUser,NumberofEmployee,
+Plural: Population, MostUsedTransportation, NumberOfFactories, TotalMilesperGallon, TotalNumberofDrivers,TotalNumberofUser,NumberofEmployee,
 Unique:CityName, TotalUsage,
 
 ATRIBUTE MINIMA
 
-Required:CityName, VehicleType, Type,, FactoryName,FactoryCity,EmissionType
-Optional:NumberOfFactories, Vehicle-Transit & Factory Emissionpercent
+Required:CityName, VehicleType, TransitType, FactoryName,FactoryCity,EmissionType
+Optional:NumberOfFactories, Vehicle-Transit & FactoryEmissionPercent
 
 
 
