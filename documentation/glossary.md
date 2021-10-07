@@ -26,5 +26,24 @@ Synonyms: air Polution
 Description: It describes the polution emitted by vehicle, factory and Public_Transit by giving their percentage gas emission.
 
 
+RELATIONSHIP MAXIMA AND MINIMA
+
+MINIMA
+Relationship: Emission
+Carbon_Emission ------> Vehicle
+Carbon_Emission ------> Public Transit
+Carbon_Emission ------> Factory
+
+
+MAXIMA
+Relationship:  CityName & population
+City --------> Vehicle
+City --------> Public_Transit
+City --------> Factory
+
+
+
+
+
 
 
