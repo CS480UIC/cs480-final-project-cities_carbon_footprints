@@ -30,17 +30,17 @@ RELATIONSHIP MAXIMA AND MINIMA
 
 Note: I wrote these out as seen in the ERD
 
-city 1(1) <--DrivesIn-- vehicle M(0)
+    city 1(1) <--DrivesIn-- vehicle M(0)
 
-city 1(1) --Has--> public_transit M(0)
+    city 1(1) --Has--> public_transit M(0)
 
-city 1(1) --Contains--> factory M(0)
+    city 1(1) --Contains--> factory M(0)
 
-vehicle M(1) --Creates--> carbon_emission 1(0)
+    vehicle M(1) --Creates--> carbon_emission 1(0)
 
-public_transit --Produces--> carbon_emission 1(0)
+    public_transit --Produces--> carbon_emission 1(0)
 
-factory --Generates--> carbon_emission 1(0)
+    factory --Generates--> carbon_emission 1(0)
 
 
 ATTRIBUTE MAXIMA AND MINIMA
@@ -50,57 +50,57 @@ Note: I wrote these based in the ERD
 
 city:
 
-cityName (PK) 1-1
+    cityName (PK) 1-1
 
-Population M-M
+    Population M-M
 
-MostUsedTransportation M-1
+    MostUsedTransportation M-1
 
-NumberOfFactories M-1
+    NumberOfFactories M-1
 
 vehicle:
 
-VehicleType M-1
+    VehicleType M-1
 
-VehicleID (PK) 1-1
+    VehicleID (PK) 1-1
 
-TotalMilesPerGallon M-1
+    TotalMilesPerGallon M-1
 
-TotalNumberOfDrivers M-1
+    TotalNumberOfDrivers M-1
 
-VehicleCity M-M
+    VehicleCity M-M
 
 public_transit:
 
-TransitID (PK) 1-1
+    TransitID (PK) 1-1
 
-TotalUsage M-1
+    TotalUsage M-1
 
-TotalNumberOfUsers M-1
+    TotalNumberOfUsers M-1
 
-TransitCity M-M
+    TransitCity M-M
 
-TransitType M-1
+    TransitType M-1
 
 factory:
 
-FactoryName 1-M
+    FactoryName 1-M
 
-FactoryCity M-M
+    FactoryCity M-M
 
-NumberOfEmployee M-1
+    NumberOfEmployee M-1
 
-FactoryID (PK) 1-1
+    FactoryID (PK) 1-1
 
 carbon_emission:
 
-VehicleEmissionPercent M-1
+    VehicleEmissionPercent M-1
 
-TransitEmissionPercent M-1
+    TransitEmissionPercent M-1
 
-FactoryEmissionPercent M-1
+    FactoryEmissionPercent M-1
 
-EmissionType (PK) 1-1
+    EmissionType (PK) 1-1
 
 
 ATTRIBUTE MAXIMA
