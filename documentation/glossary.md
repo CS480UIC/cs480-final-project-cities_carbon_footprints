@@ -28,27 +28,80 @@ Description: It describes the polution emitted by vehicle, factory and Public_Tr
 
 RELATIONSHIP MAXIMA AND MINIMA
 
-MINIMA
-Relationship: Emission
+Note: I wrote these out as seen in the ERD
 
-Carbon_Emission ------> Vehicle
+city 1(1) <--DrivesIn-- vehicle M(0)
 
-Carbon_Emission ------> Public Transit
+city 1(1) --Has--> public_transit M(0)
 
-Carbon_Emission ------> Factory
+city 1(1) --Contains--> factory M(0)
 
+vehicle M(1) --Creates--> carbon_emission 1(0)
 
-MAXIMA
-Relationship:  CityName & population
+public_transit --Produces--> carbon_emission 1(0)
 
-City --------> Vehicle
-
-City --------> Public_Transit
-
-City --------> Factory
+factory --Generates--> carbon_emission 1(0)
 
 
 ATTRIBUTE MAXIMA AND MINIMA
+
+Note: I wrote these based in the ERD
+
+
+city:
+
+cityName (PK) 1-1
+
+Population M-M
+
+MostUsedTransportation M-1
+
+NumberOfFactories M-1
+
+vehicle:
+
+VehicleType M-1
+
+VehicleID (PK) 1-1
+
+TotalMilesPerGallon M-1
+
+TotalNumberOfDrivers M-1
+
+VehicleCity M-M
+
+public_transit:
+
+TransitID (PK) 1-1
+
+TotalUsage M-1
+
+TotalNumberOfUsers M-1
+
+TransitCity M-M
+
+TransitType M-1
+
+factory:
+
+FactoryName 1-M
+
+FactoryCity M-M
+
+NumberOfEmployee M-1
+
+FactoryID (PK) 1-1
+
+carbon_emission:
+
+VehicleEmissionPercent M-1
+
+TransitEmissionPercent M-1
+
+FactoryEmissionPercent M-1
+
+EmissionType (PK) 1-1
+
 
 ATTRIBUTE MAXIMA
 
