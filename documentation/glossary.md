@@ -83,6 +83,8 @@ public_transit:
     TransitCity M-M
 
     TransitType M-1
+    
+    TransitEmissionType 1-M
 
 factory:
 
