@@ -69,6 +69,8 @@ vehicle:
     TotalNumberOfDrivers M-1
 
     VehicleCity M-M
+    
+    VehicleEmissionType 1-M
 
 public_transit:
 
@@ -112,7 +114,7 @@ Unique:CityName, TotalUsage,
 
 ATTRIBUTE MINIMA
 
-Required:CityName, VehicleType, TransitType, FactoryName,FactoryCity,EmissionType
+Required:CityName, VehicleType, TransitType, FactoryName,FactoryCity,EmissionType, VehicleEmissionType
 Optional:NumberOfFactories, Vehicle-Transit & FactoryEmissionPercent
 
 
