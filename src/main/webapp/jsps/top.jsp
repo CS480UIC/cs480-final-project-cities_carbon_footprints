@@ -45,7 +45,7 @@
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
 			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/city/menu.jsp'/>" target="body">CRUD city</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD vehicle</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/vehicle/menu.jsp'/>" target="body">CRUD vehicle</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD public_transit</a> |&nbsp;&nbsp;
 
 		</c:otherwise>

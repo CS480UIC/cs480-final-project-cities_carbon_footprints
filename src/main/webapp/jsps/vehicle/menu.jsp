@@ -5,8 +5,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <base href="">
     
-    <title>Delete city</title>
+    <title>body</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +22,12 @@
   </head>
   
   <body>
-  <h1>Delete city</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Delete city   :<input type="text" name="username" value="${form.city }"/>
-	<span style="color: red; font-weight: 900">${errors.city }</span>
-	<br/>
-	<input type="submit" value="Delete Entity1"/>
-</form>
+    <h1>CRUD operations for vehicle </h1>
+    <br>
+	<a href="<c:url value='/jsps/vehicle/vehicle_create.jsp'/>" target="_parent">Create vehicle</a> |&nbsp; 
+	<a href="<c:url value='/jsps/vehicle/vehicle_read.jsp'/>" target="_parent">Read vehicle</a> |&nbsp;
+	<a href="<c:url value='/jsps/vehicle/vehicle_update.jsp'/>" target="_parent">Update vehicle</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/vehicle/vehicle_delete.jsp'/>" target="_parent">Delete vehicle</a>	
+	    
   </body>
 </html>

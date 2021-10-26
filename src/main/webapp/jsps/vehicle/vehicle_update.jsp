@@ -5,9 +5,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <base href="">
     
-    <title>body</title>
+    <title>Update vehicle</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,12 +21,13 @@
   </head>
   
   <body>
-    <h1>CRUD operations for city </h1>
-    <br>
-	<a href="<c:url value='/jsps/city/city_create.jsp'/>" target="_parent">Create city</a> |&nbsp; 
-	<a href="<c:url value='/jsps/city/city_read.jsp'/>" target="_parent">Read city</a> |&nbsp;
-	<a href="<c:url value='/jsps/city/city_update.jsp'/>" target="_parent">Update city</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/city/city_delete.jsp'/>" target="_parent">Delete city</a>	
-	    
+  <h1>Update vehicle</h1>
+<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+	<input type="hidden" name="method" value="search"/>
+	Update vehicleID   :<input type="text" name="vehicleID" value="${form.vehicleID }"/>
+	<span style="color: red; font-weight: 900">${errors.vehicle }</span>
+	<br/>
+	<input type="submit" value="Update vehicle"/>
+</form>
   </body>
 </html>
