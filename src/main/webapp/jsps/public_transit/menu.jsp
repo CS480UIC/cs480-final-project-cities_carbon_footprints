@@ -5,8 +5,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <base href="">
     
-    <title>Update vehicle</title>
+    <title>body</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +22,12 @@
   </head>
   
   <body>
-  <h1>Update vehicle</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Update VehicleID   :<input type="text" name="VehicleID" value="${form.VehicleID }"/>
-	<span style="color: red; font-weight: 900">${errors.VehicleID }</span>
-	<br/>
-	<input type="submit" value="Update vehicle"/>
-</form>
+    <h1>CRUD operations for public_transit </h1>
+    <br>
+	<a href="<c:url value='/jsps/public_transit/public_transit_create.jsp'/>" target="_parent">Create public_transit</a> |&nbsp; 
+	<a href="<c:url value='/jsps/public_transit/public_transit_read.jsp'/>" target="_parent">Read public_transit</a> |&nbsp;
+	<a href="<c:url value='/jsps/public_transit/public_transit_update.jsp'/>" target="_parent">Update public_transit</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/public_transit/public_transit_delete.jsp'/>" target="_parent">Delete public_transit</a>	
+	    
   </body>
 </html>

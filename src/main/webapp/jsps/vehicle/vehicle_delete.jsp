@@ -24,8 +24,8 @@
   <h1>Delete vehicle</h1>
 <form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete vehicleID   :<input type="text" name="vehicleID" value="${form.vehicleID }"/>
-	<span style="color: red; font-weight: 900">${errors.vehicleID }</span>
+	Delete VehicleID   :<input type="text" name="vehicleID" value="${form.VehicleID }"/>
+	<span style="color: red; font-weight: 900">${errors.VehicleID }</span>
 	<br/>
 	<input type="submit" value="Delete vehicle"/>
 </form>

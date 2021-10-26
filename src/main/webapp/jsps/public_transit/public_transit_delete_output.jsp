@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read vehicle Output</title>
+    <title>Delete public_transit</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,20 @@
   </head>
   
   <body>
-  <h1>Read vehicle Output</h1>
+  <h1>Delete public_transit</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form>
-	VehicleName:	<input type="text" name="VehicleName" value="${vehicle.VehicleName }" disabled/>
+<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+	<input type="hidden" name="method" value="delete"/>
+		<input type="hidden" name="username" value="${entity1.username }"/>
+	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
 	<br/>
-	Population：	<input type="text" name="Population" value="${vehicle.Population }" disabled/>
+	
+	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
 	<br/>
-	MostUsedTransportation：	<input type="text" name="MostUsedTransportation" value="${vehicle.MostUsedTransportation }" disabled/>
+	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
 	<br/>
-	NumberOFactories：	<input type="text" name="NumberOFactories" value="${vehicle.NumberOFactories }" disabled/>
-	<br/>
+	<input type="submit" value="Delete Entity1"/>
 </form>
 
-<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
 </body>
 </html>

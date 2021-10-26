@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read vehicle Output</title>
+    <title>Read public_transit Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,16 +21,16 @@
   </head>
   
   <body>
-  <h1>Read vehicle Output</h1>
+  <h1>Read public_transit Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	VehicleName:	<input type="text" name="VehicleName" value="${vehicle.VehicleName }" disabled/>
+	public_transitName:	<input type="text" name="public_transitName" value="${public_transit.public_transitName }" disabled/>
 	<br/>
-	Population：	<input type="text" name="Population" value="${vehicle.Population }" disabled/>
+	Population：	<input type="text" name="Population" value="${public_transit.Population }" disabled/>
 	<br/>
-	MostUsedTransportation：	<input type="text" name="MostUsedTransportation" value="${vehicle.MostUsedTransportation }" disabled/>
+	MostUsedTransportation：	<input type="text" name="MostUsedTransportation" value="${public_transit.MostUsedTransportation }" disabled/>
 	<br/>
-	NumberOFactories：	<input type="text" name="NumberOFactories" value="${vehicle.NumberOFactories }" disabled/>
+	NumberOFactories：	<input type="text" name="NumberOFactories" value="${public_transit.NumberOFactories }" disabled/>
 	<br/>
 </form>
 
