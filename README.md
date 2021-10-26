@@ -17,7 +17,29 @@ The main idea of this project is to analyze amount of carbon dioxide being emitt
 	This project is different from other projects on the internet because the main idea is to go beyond just cities or states but into communities. With this we can truly understand specifically where the carbon dioxide emission is coming from and what patterns we see that can be used to nail down the problem. 
 
 
+## Screenshots:
 
+## CRUD for city
+![Alt text](/screeshots/cityCrud.PNG?raw=true)
+![Alt text](/screeshots/cityCreate.PNG?raw=true)
+![Alt text](/screeshots/cityRead.PNG?raw=true)
+![Alt text](/screeshots/citySave.PNG?raw=true)
+![Alt text](/screeshots/cityDelete.PNG?raw=true)
 
+## CRUD for vehicle
+
+![Alt text](/screeshots/vehicleCrud.PNG?raw=true)
+![Alt text](/screeshots/vehicleCreate.PNG?raw=true)
+![Alt text](/screeshots/vehicleRead.PNG?raw=true)
+![Alt text](/screeshots/vehicleUpdate.PNG?raw=true)
+![Alt text](/screeshots/vehicleDelete.PNG?raw=true)
+
+## CRUD for public_transit
+
+![Alt text](/screeshots/public_transit_crud.PNG?raw=true)
+![Alt text](/screeshots/pt_create.PNG?raw=true)
+![Alt text](/screeshots/pt_read.PNG?raw=true)
+![Alt text](/screeshots/pt_update.PNG?raw=true)
+![Alt text](/screeshots/pt_delete.PNG?raw=true)
 
 [![Work in MakeCode](https://classroom.github.com/assets/work-in-make-code-c53f0c86300af1a64cdd5dc830e2509efd17c8cb483a722cacaee84d10eb8ec9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5816973&assignment_repo_type=AssignmentRepo)
