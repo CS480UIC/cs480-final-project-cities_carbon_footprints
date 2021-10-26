@@ -17,7 +17,9 @@ The main idea of this project is to analyze amount of carbon dioxide being emitt
 	This project is different from other projects on the internet because the main idea is to go beyond just cities or states but into communities. With this we can truly understand specifically where the carbon dioxide emission is coming from and what patterns we see that can be used to nail down the problem. 
 
 
+## Screenshots:
 
+![Alt text](/screeshots/cityCrud.PNG?raw=true)
 
 
 [![Work in MakeCode](https://classroom.github.com/assets/work-in-make-code-c53f0c86300af1a64cdd5dc830e2509efd17c8cb483a722cacaee84d10eb8ec9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5816973&assignment_repo_type=AssignmentRepo)
