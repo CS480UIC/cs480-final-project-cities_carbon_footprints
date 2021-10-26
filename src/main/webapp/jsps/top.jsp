@@ -18,7 +18,7 @@
 	-->
 <style type="text/css">
 	body {
-		background: #800000; 
+		background: #00cc99; 
 	}
 	a {
 		text-transform:none;
@@ -31,7 +31,7 @@
   </head>
   
   <body>
-<h1 style="text-align: center;">Eric Leon</h1>
+<h1 style="text-align: center;">cities_carbon_footprints</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
@@ -44,6 +44,9 @@
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
 			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/city/menu.jsp'/>" target="body">CRUD city</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD vehicle</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD public_transit</a> |&nbsp;&nbsp;
 
 		</c:otherwise>
 	</c:choose>
