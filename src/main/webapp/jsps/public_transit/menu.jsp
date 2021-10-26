@@ -22,7 +22,7 @@
   </head>
   
   <body>
-    <h1>CRUD operations for public_transit </h1>
+    <h1>CRUD operations for public transit </h1>
     <br>
 	<a href="<c:url value='/jsps/public_transit/public_transit_create.jsp'/>" target="_parent">Create public_transit</a> |&nbsp; 
 	<a href="<c:url value='/jsps/public_transit/public_transit_read.jsp'/>" target="_parent">Read public_transit</a> |&nbsp;
