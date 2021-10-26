@@ -24,8 +24,8 @@
   <h1>Update city</h1>
 <form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update User   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Update city   :<input type="text" name="username" value="${form.city }"/>
+	<span style="color: red; font-weight: 900">${errors.city }</span>
 	<br/>
 	<input type="submit" value="Update Entity1"/>
 </form>

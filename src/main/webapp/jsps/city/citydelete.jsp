@@ -24,8 +24,8 @@
   <h1>Delete city</h1>
 <form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete User   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Delete city   :<input type="text" name="username" value="${form.city }"/>
+	<span style="color: red; font-weight: 900">${errors.city }</span>
 	<br/>
 	<input type="submit" value="Delete Entity1"/>
 </form>
