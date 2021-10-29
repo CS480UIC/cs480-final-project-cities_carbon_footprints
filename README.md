@@ -42,4 +42,31 @@ The main idea of this project is to analyze amount of carbon dioxide being emitt
 ![Alt text](/screenshots/pt_update.PNG?raw=true)
 ![Alt text](/screenshots/pt_delete.PNG?raw=true)
 
+## CRUD for Factory
+![1](https://user-images.githubusercontent.com/32080533/139362399-4beb9397-54bf-4012-acbe-33af393b5f0c.PNG)
+![CRUD FACTORY](https://user-images.githubusercontent.com/32080533/139362435-43f43a5d-3d01-44a3-9fab-406cc476fb58.PNG)
+![FACTORY CREATE](https://user-images.githubusercontent.com/32080533/139362492-5383c91d-d687-4ef3-82b5-30f0d9ba2dd6.PNG)
+![read Factory](https://user-images.githubusercontent.com/32080533/139362521-dfa9bcc5-1961-49f6-aaa2-955505d77275.PNG)
+![DELETE FACTORY](https://user-images.githubusercontent.com/32080533/139362549-360509a2-056c-4161-8e10-ef7216f3512e.PNG)
+![UPDATE FACTORY](https://user-images.githubusercontent.com/32080533/139362585-3135d85b-5367-4371-82e0-f89e21e19cdf.PNG)
+
+## CRUD for carbon emission
+![CRUD CARBON EMISSION](https://user-images.githubusercontent.com/32080533/139362840-8269d3e0-f3e4-4f85-8e21-f26f9c6d124c.PNG)
+![CREATE CARBON EMISSION](https://user-images.githubusercontent.com/32080533/139362894-c65b9ea1-4a4b-4a8b-b56a-94be7f92b0c8.PNG)
+![DELETE CARBON EMISSION](https://user-images.githubusercontent.com/32080533/139362967-249e27ca-7beb-4847-aaae-7877bb2b645f.PNG)
+![UPDATE CARBON EMISSION](https://user-images.githubusercontent.com/32080533/139362991-0f781d05-030d-43e2-9651-c1f1b3e078f0.PNG)
+![READ CARBON EMISSION](https://user-images.githubusercontent.com/32080533/139363012-998aa379-9df2-4e69-a285-989cba6fc55a.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
 [![Work in MakeCode](https://classroom.github.com/assets/work-in-make-code-c53f0c86300af1a64cdd5dc830e2509efd17c8cb483a722cacaee84d10eb8ec9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5816973&assignment_repo_type=AssignmentRepo)
+
