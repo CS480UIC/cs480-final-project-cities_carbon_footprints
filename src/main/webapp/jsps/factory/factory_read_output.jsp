@@ -24,14 +24,15 @@
   <h1>Read Factory Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
+    FactoryID	：<input type="text" name="factoryid" value="${factory.factoryid }" disabled/>
+	<br/>
 	FactoryName    :<input type="text" name="factoryname" value="${factory.factoryname }" disabled/>
 	<br/>
 	FactoryCity：<input type="text" name="factorycity" value="${factory.factorycity }" disabled/>
 	<br/>
 	NumberOfEmployee	：<input type="text" name="numberofemployee" value="${factory.numberofemployee }" disabled/>
 	<br/>
-	FactoryID	：<input type="text" name="factoryid" value="${factory.factoryid }" disabled/>
-	<br/>
+	
 </form>
 
 <button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>

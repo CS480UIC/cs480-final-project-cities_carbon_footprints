@@ -24,8 +24,8 @@
   <h1>Update</h1>
 <form action="<c:url value='/factoryServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update Factory   :<input type="text" name="factoryname" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.factoryname }</span>
+	Update Factory   :<input type="text" name="factoryid" value="${form.factoryid }"/>
+	<span style="color: red; font-weight: 900">${errors.factoryid }</span>
 	<br/>
 	<input type="submit" value="Update Factory"/>
 </form>

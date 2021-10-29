@@ -25,8 +25,8 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/factoryServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	FactoryName    :<input type="text" name="username" value="${form.factoryname }"/>
-	<span style="color: red; font-weight: 900">${errors.factoryname }</span>
+	FactoryID    :<input type="text" name="factoryid" value="${form.factoryid }"/>
+	<span style="color: red; font-weight: 900">${errors.factoryid }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>

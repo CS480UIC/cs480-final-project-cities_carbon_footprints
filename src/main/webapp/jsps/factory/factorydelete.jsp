@@ -24,8 +24,8 @@
   <h1>Delete Factory</h1>
 <form action="<c:url value='/factoryServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	FactoryName   :<input type="text" name="factoryname" value="${form.factoryname }"/>
-	<span style="color: red; font-weight: 900">${errors.factoryname }</span>
+	FactoryID   :<input type="text" name="factoryid" value="${form.factoryid }"/>
+	<span style="color: red; font-weight: 900">${errors.factoryid }</span>
 	<br/>
 	<input type="submit" value="Delete Factory"/>
 </form>

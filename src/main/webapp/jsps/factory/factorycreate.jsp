@@ -23,6 +23,9 @@
   <body>
   <h1>Factory Create</h1>
 <form action="<c:url value='/factoryServletCreate'/>" method="post">
+	FactoryID	：<input type="text" name="factoryid" value="${form.factoryid }"/>
+	<span style="color: red; font-weight: 900">${errors.factoryid }</span>
+	<br/>
 	FactoryName    :<input type="text" name="factoryname" value="${form.factoryname }"/>
 	<span style="color: red; font-weight: 900">${errors.factoryname }</span>
 	<br/>
@@ -32,9 +35,7 @@
 	NumberOfEmployee	：<input type="text" name="numberofemployee" value="${form.numberofemployee }"/>
 	<span style="color: red; font-weight: 900">${errors.numberofemployee }</span>
 	<br/>
-	FactoryID	：<input type="text" name="factoryid" value="${form.factoryid }"/>
-	<span style="color: red; font-weight: 900">${errors.factoryid }</span>
-	<br/>
+	
 	<input type="submit" value="Create Factory"/>
 </form>
   </body>

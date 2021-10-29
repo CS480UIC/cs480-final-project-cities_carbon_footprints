@@ -25,7 +25,9 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/FactoryServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="factoryname" value="${factory.factoryname }"/>
+		<input type="hidden" name="factorid" value="${factory.factoryid }"/>
+	FactoryID	：<input type="text" name="factoryid" value="${factory.factoryid }" disabled/>
+	<br/>
 	FactoryName    :<input type="text" name="factoryname" value="${factory.factoryname }" disabled/>
 	<br/>
 	
@@ -33,8 +35,7 @@
 	<br/>
 	NumberOfEmployee	：<input type="text" name="numberofemployee" value="${factory.numberofemployee }" disabled/>
 	<br/>
-	FactoryID	：<input type="text" name="factoryid" value="${factory.factoryid }" disabled/>
-	<br/>
+	
 	<input type="submit" value="Delete Factory"/>
 </form>
 
