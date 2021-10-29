@@ -5,8 +5,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <base href="">
     
-    <title>Delete Factory</title>
+    <title>body</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +22,12 @@
   </head>
   
   <body>
-  <h1>Delete Factory</h1>
-<form action="<c:url value='/factoryServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	FactoryName   :<input type="text" name="factoryname" value="${form.factoryname }"/>
-	<span style="color: red; font-weight: 900">${errors.factoryname }</span>
-	<br/>
-	<input type="submit" value="Delete Factory"/>
-</form>
+    <h1>CRUD operations for carbon_emission </h1>
+    <br>
+	<a href="<c:url value='/jsps/carbon_emission/carbon_emissioncreate.jsp'/>" target="_parent">Create Factory</a> |&nbsp; 
+	<a href="<c:url value='/jsps/carbon_emission/carbon_emissionread.jsp'/>" target="_parent">Read Factory</a> |&nbsp;
+	<a href="<c:url value='/jsps/carbon_emission/carbon_emissionupdate.jsp'/>" target="_parent">Update Factory</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/carbon_emission/carbon_emissiondelete.jsp'/>" target="_parent">Delete Factory</a>	
+	    
   </body>
 </html>

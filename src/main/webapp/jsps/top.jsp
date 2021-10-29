@@ -47,6 +47,8 @@
 			<a href="<c:url value='/jsps/city/menu.jsp'/>" target="body">CRUD city</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/vehicle/menu.jsp'/>" target="body">CRUD vehicle</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/public_transit/menu.jsp'/>" target="body">CRUD public_transit</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/factory/menu.jsp'/>" target="body">CRUD factory</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/carbon_emission/menu.jsp'/>" target="body">CRUD carbon_emission</a> |&nbsp;&nbsp;
 
 		</c:otherwise>
 	</c:choose>

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Factory</title>
+    <title>Update carbon_emission</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,13 @@
   </head>
   
   <body>
-  <h1>Delete Factory</h1>
-<form action="<c:url value='/factoryServletDelete'/>" method="post">
+  <h1>Update carbon_emission</h1>
+<form action="<c:url value='/carbon_emissionServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	FactoryName   :<input type="text" name="factoryname" value="${form.factoryname }"/>
-	<span style="color: red; font-weight: 900">${errors.factoryname }</span>
+	Update carbon_emission   :<input type="text" name="emissiontype" value="${form.emissiontype }"/>
+	<span style="color: red; font-weight: 900">${errors.emissiontype }</span>
 	<br/>
-	<input type="submit" value="Delete Factory"/>
+	<input type="submit" value="Update carbon_emission"/>
 </form>
   </body>
 </html>

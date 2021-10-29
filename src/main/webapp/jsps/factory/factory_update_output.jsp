@@ -47,7 +47,7 @@
 	FactoryID	：<input type="text" name="factoryid" value="${form.factoryid }"/>
 	<span style="color: red; font-weight: 900">${errors.factoryid }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	<input type="submit" value="Update Factory"/>
 </form>
 
 </body>
