@@ -24,10 +24,10 @@
   <body>
     <h1>CRUD operations for carbon_emission </h1>
     <br>
-	<a href="<c:url value='/jsps/carbon_emission/carbon_emissioncreate.jsp'/>" target="_parent">Create Factory</a> |&nbsp; 
-	<a href="<c:url value='/jsps/carbon_emission/carbon_emissionread.jsp'/>" target="_parent">Read Factory</a> |&nbsp;
-	<a href="<c:url value='/jsps/carbon_emission/carbon_emissionupdate.jsp'/>" target="_parent">Update Factory</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/carbon_emission/carbon_emissiondelete.jsp'/>" target="_parent">Delete Factory</a>	
+	<a href="<c:url value='/jsps/carbon_emission/carbon_emissioncreate.jsp'/>" target="_parent">Create carbon_emission</a> |&nbsp; 
+	<a href="<c:url value='/jsps/carbon_emission/carbon_emissionread.jsp'/>" target="_parent">Read carbon_emission</a> |&nbsp;
+	<a href="<c:url value='/jsps/carbon_emission/carbon_emissionupdate.jsp'/>" target="_parent">Update carbon_emission</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/carbon_emission/carbon_emissiondelete.jsp'/>" target="_parent">Delete carbon_emission</a>	
 	    
   </body>
 </html>
