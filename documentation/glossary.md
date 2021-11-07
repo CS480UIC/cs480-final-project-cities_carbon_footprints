@@ -56,7 +56,7 @@ city:
 
     MostUsedTransportation M-1
 
-    NumberOfFactories M-1
+    FactoryNumber M-1
 
 vehicle:
 
@@ -64,9 +64,7 @@ vehicle:
 
     VehicleID (PK) 1-1
 
-    TotalMilesPerGallon M-1
-
-    TotalNumberOfDrivers M-1
+    GasMileage M-1
 
     VehicleCity M-M
     
@@ -77,8 +75,6 @@ public_transit:
     TransitID (PK) 1-1
 
     TotalUsage M-1
-
-    TotalNumberOfUsers M-1
 
     TransitCity M-M
 
@@ -92,17 +88,15 @@ factory:
 
     FactoryCity M-M
 
-    NumberOfEmployee M-1
+    FactoryEmissionType 1-M
 
     FactoryID (PK) 1-1
 
 carbon_emission:
 
-    VehicleEmissionPercent M-1
-
-    TransitEmissionPercent M-1
-
-    FactoryEmissionPercent M-1
+    EmissionPercent M-1
+    
+    EmissionSource 1-M
 
     EmissionType (PK) 1-1
 
@@ -111,7 +105,7 @@ ATTRIBUTE MAXIMA
 
 Singular: CityName
 
-Plural: Population, MostUsedTransportation, NumberOfFactories, TotalMilesperGallon, TotalNumberofDrivers,TotalNumberofUser,NumberofEmployee,
+Plural: Population, MostUsedTransportation, FactoryNumber, GasMileage, EmissionSource
 Unique:CityName, TotalUsage,
 
 ATTRIBUTE MINIMA
@@ -136,29 +130,63 @@ Dependent relationships:
  
  Specify cascade and restrict actions for dependency relationships:
  
-        vehicle DEPENDS city, 
+        vehicle DEPENDS city, carbon_emission
         Foreign Key = VehicleCity refers to CityName in city
             CASCADE on primary key update and delete
             Restrict on foreign key insert and update
             
-        public_transit DEPENDS city, 
+        Foreign Key = vehicle_emission_type refers to emission_type in carbon_emission
+            CASCADE on primary key update and delete
+            Restrict on foreign key insert and update
+            
+        public_transit DEPENDS city, carbon_emission
         Foreign Key = TransitCity refers to CityName in city
             CASCADE on primary key update and delete
             Restrict on foreign key insert and update
-    
+            
+        Foreign Key = transit_emission_type refers to emission_type in carbon_emission
+            CASCADE on primary key update and delete
+            Restrict on foreign key insert and update
+            
+        factory DEPENDS city, carbon_emission
+        Foreign Key = TransitCity refers to CityName in city
+            CASCADE on primary key update and delete
+            Restrict on foreign key insert and update
+            
+        Foreign Key = factory_emission_type refers to emission_type in carbon_emission
+            CASCADE on primary key update and delete
+            Restrict on foreign key insert and update
+            
  
  
  Specify cascade and restrict rules on foreign keys:
  
-        vehicle DEPENDS city, 
+        vehicle DEPENDS city, carbon_emission
         Foreign Key = VehicleCity refers to CityName in city
             CASCADE on primary key update and delete
             Restrict on foreign key insert and update
             
-        public_transit DEPENDS city, 
+        Foreign Key = vehicle_emission_type refers to emission_type in carbon_emission
+            CASCADE on primary key update and delete
+            Restrict on foreign key insert and update
+            
+        public_transit DEPENDS city, carbon_emission
         Foreign Key = TransitCity refers to CityName in city
             CASCADE on primary key update and delete
             Restrict on foreign key insert and update 
+            
+        Foreign Key = transit_emission_type refers to emission_type in carbon_emission
+            CASCADE on primary key update and delete
+            Restrict on foreign key insert and update
+            
+       factory DEPENDS city, carbon_emission
+       Foreign Key = TransitCity refers to CityName in city
+            CASCADE on primary key update and delete
+            Restrict on foreign key insert and update
+            
+        Foreign Key = factory_emission_type refers to emission_type in carbon_emission
+            CASCADE on primary key update and delete
+            Restrict on foreign key insert and update
 
 
 Table city: 
@@ -184,11 +212,11 @@ Table city:
     Description: "MostUsedTransportation' is used to label information with a up to 40 characters. Punctuation is not allowed. Examples of 'MostUsedTranportation' are 'Sedan', 'SUV', 'Train',  and 'Bus'.
     
     
-    Attribute Type: NumberOfFactories
+    Attribute Type: FactoryNumber
 
     Data Type: INT
 
-    Description: 'NumberOfFactories' is used to label information with an integer value. The value must be non-negative and whole numbers. Examples of 'NumberOfFactories' are 1, 300, 5959, or 9000.
+    Description: 'FactoryNumber' is used to label information with an integer value. The value must be non-negative and whole numbers. Examples of 'FactoryNumber' are 1, 300, 5959, or 9000.
     
     
 Table vehicle:
@@ -214,18 +242,11 @@ Table vehicle:
     Description: 'VehicleEmissionType' is used to describe information up to 10 characters. Examples of 'VehicleEmissionType' are CO for carbon Monoxide, None if the vehicle has no emission, or Green for green house gases. This type includes any type of emission gases produced through vehicles.
     
     
-    Attribute Type: TotalMilesPerGallon
+    Attribute Type: GasMileage
 
     Data Type: Double(65, 2)
 
-    Description: 'TotalMilesPerGallon' is used to describe information of digits up to 65 digits and a decimal point of 2. Some examples of 'TotalMilesPerGallon' are 125.12, 567.56, or 5694.56.
-    
-    
-    Attribute Type: TotalNumberOfDrivers
-
-    Data Type: INT
-
-    Description: 'TotalNumberOfDrivers' is used to describe information with an integer value. The value must be non-negative and whole number. Examples of 'TotalNumberOfDrivers' are 1000, 4000, or 10,000.
+    Description: 'GasMileage' is used to describe information of digits up to 65 digits and a decimal point of 2. Some examples of 'GasMileage' are 125.12, 567.56, or 5694.56.
         
         
     Attribute Type: VehicleCity
@@ -251,13 +272,6 @@ Table public_transit:
     Description: 'TotalUsage' is used to describe information up to decimal values up to 5 digits a minimum of 2. Examples of 'TotalUsage' are .012, .440, or .5688.
     
     
-    Attribute Type: TotalNumberOfUsers
-
-    Data Type: INT
-
-    Description: 'TotalNumberOfUsers' is used to describe an integer value. The value must be whole non-negative value. Examples of 'TotalNumberOfUsers' are 45, 12345, 449949, or 0.
-    
-    
     Attribute Type: TransitEmissionType
 
     Data Type: VARCHAR(10)
@@ -277,6 +291,8 @@ Table public_transit:
     Data Type: VARCHAR(20)
 
     Description: 'TransitType' is used to describe information up to 20 characters. Punctuation is not allowed. Examples of 'TransitType' can be 'Bus', 'Train', 'Bike', or 'Walk'. 
+    
+
 
 
 
