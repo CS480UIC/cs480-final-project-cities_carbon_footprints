@@ -1,6 +1,5 @@
 CREATE DATABASE cities_carbon_footprints;
 
-
 use  cities_carbon_footprints;
 
 CREATE TABLE user
@@ -11,7 +10,6 @@ CREATE TABLE user
   email VARCHAR(50) NOT NULL
 );
 
-
 CREATE TABLE entity1 
 (
   
@@ -19,7 +17,6 @@ CREATE TABLE entity1
   `password` VARCHAR(50) NOT NULL,
   email VARCHAR(50) NOT NULL
 );
-
 
 CREATE TABLE city
 (
@@ -30,6 +27,15 @@ CREATE TABLE city
 	factory_number INT,
 	city_date DATE,
 	PRIMARY KEY(city_id)
+);
+
+CREATE TABLE carbon_emission
+(
+	emission_source VARCHAR(50) NOT NULL,
+	emission_percent DECIMAL(3,2) NOT NULL,
+	emission_type VARCHAR(10) NOT NULL,
+	emission_date DATE,
+	PRIMARY KEY(emission_type, emission_date)
 );
 
 CREATE TABLE vehicle 
@@ -48,7 +54,6 @@ CREATE TABLE vehicle
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
 );
-
 
 CREATE TABLE public_transit
 (
@@ -82,14 +87,3 @@ CREATE TABLE factory
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 );
-
-CREATE TABLE carbon_emission
-(
-	emission_source VARCHAR(50) NOT NULL,
-	emission_percent DECIMAL(3,2) NOT NULL,
-	emission_type VARCHAR(10) NOT NULL,
-	emission_date DATE,
-	PRIMARY KEY(emission_type, emission_date)
-);
-
-
