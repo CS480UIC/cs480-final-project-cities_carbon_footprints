@@ -1,0 +1,6 @@
+emission_date,emission_percent,emission_type,emission_source
+2021-04-13 22:34:01,.01,CO,car
+2021-05-12 22:34:01,.022,Natural,train
+2021-05-18 22:34:01,.03,NOx,trucks
+2021-09-15 22:34:01,.04,SA,bus
+2023-02-05 22:34:01,.05,CO,factory A

@@ -1,6 +1,6 @@
-Timestamp,vehicle_type,gas_mileage,vehicle_city,vehicle_emission_type,vehicle_date
-10/16/2021 8:06:00,Sedan,16,Portland,CO,2021-04-12
-10/17/2021 8:06:00,SUV,14,Chicago,CO,2021-05-12
-10/18/2021 8:06:00,Hybrid,26,Chicago,CO,2021-05-18
-10/19/2021 8:06:00,Electric,45,Los Angeles,None,2021-09-15
-10/20/2021 8:06:00,Pickup Truck,14,Miami,CO,2023-02-05
+vehicle_id,vehicle_type,gas_mileage,vehicle_city,vehicle_emission_type,vehicle_date
+1,Sedan,16,Portland,CO,2021-04-12 22:34:01
+2,SUV,14,Chicago,NoX,2021-05-12 22:34:01
+3,Hybrid,26,Chicago,CO,2021-05-18 22:34:01
+4,Electric,45,Los Angeles,Natural,2021-09-15 22:34:01
+5,Pickup Truck,14,Orlando,SA,2023-02-05 22:34:01
