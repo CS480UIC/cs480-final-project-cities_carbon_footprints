@@ -15,5 +15,18 @@ FROM vehicle
 WHERE EXISTS ( SELECT emission_type
 			   FROM carbon_emission
                WHERE carbon_emission.emission_type = vehicle.vehicle_emission_type);
-               
-               
+
+CREATE INDEX FirstIndex
+ON city (city_name);
+
+CREATE INDEX SecondIndex
+ON vehicle (vehicle_type);
+
+CREATE INDEX ThirdIndex
+ON public_transit(transit_type);
+
+CREATE INDEX FourthIndex
+ON factory(factory_name);
+
+CREATE INDEX FifthIndex
+ON carbon_emission(emission_percent);
