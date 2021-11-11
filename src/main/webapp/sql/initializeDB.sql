@@ -72,6 +72,30 @@ INSERT INTO `city` VALUES (1,'Chicago',1000000,'Gas',300,'2021-04-13'),(2,'Portl
 UNLOCK TABLES;
 
 --
+-- Table structure for table `entity1`
+--
+
+DROP TABLE IF EXISTS `entity1`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `entity1` (
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `entity1`
+--
+
+LOCK TABLES `entity1` WRITE;
+/*!40000 ALTER TABLE `entity1` DISABLE KEYS */;
+/*!40000 ALTER TABLE `entity1` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `factory`
 --
 
@@ -137,6 +161,30 @@ INSERT INTO `public_transit` VALUES (1,0.05,'NOx','Chicago','2021-04-12','Walkin
 UNLOCK TABLES;
 
 --
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user` (
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `vehicle`
 --
 
@@ -178,4 +226,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-09 21:27:08
+-- Dump completed on 2021-11-11 17:07:19
