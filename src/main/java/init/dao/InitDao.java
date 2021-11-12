@@ -1,4 +1,4 @@
-package user.dao;
+package init.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,7 +16,7 @@ import user.domain.User;
 /**
  * DDL functions performed in database
  */
-public class UserDao {
+public class InitDao {
 	
 	/**
 	 * user name to connect to the database 
@@ -58,6 +58,22 @@ public class UserDao {
 		return user;
 	}
 	
+	/**
+	 * InitliazeDB
+	 */
+	public void intialize() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/cities_carbon_footprints", MySQL_user, MySQL_password);
+			
+			String sql = "CREATE TABLE TEST(id int, name varchar(10))";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
 
 	
 	
