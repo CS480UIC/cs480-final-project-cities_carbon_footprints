@@ -113,7 +113,7 @@ public class Entity1Dao {
 	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/bookstore", MySQL_user, MySQL_password);
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/cities_carbon_footprints", MySQL_user, MySQL_password);
 			
 			String sql = "delete from entity1 where username = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 

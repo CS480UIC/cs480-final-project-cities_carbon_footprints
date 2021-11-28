@@ -22,4 +22,8 @@ public class CityService {
 	public void updateCity(City form) throws CityException, ClassNotFoundException, InstantiationException, IllegalAccessException{
 		cityDao.update(form);
 	}
+	
+	public void deleteCity(String cityName) throws CityException, ClassNotFoundException, InstantiationException, IllegalAccessException{
+		cityDao.delete(cityName);
+	}
 }

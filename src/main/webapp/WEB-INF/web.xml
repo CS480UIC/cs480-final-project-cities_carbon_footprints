@@ -84,6 +84,17 @@
   
   <servlet>
     <description></description>
+    <display-name>CityServletDelete</display-name>
+    <servlet-name>CityServletDelete</servlet-name>
+    <servlet-class>city.web.servlet.CityServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CityServletDelete</servlet-name>
+    <url-pattern>/CityServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>UserServletRegister</display-name>
     <servlet-name>UserServletRegister</servlet-name>
     <servlet-class>user.web.servlet.UserServletRegister</servlet-class>
