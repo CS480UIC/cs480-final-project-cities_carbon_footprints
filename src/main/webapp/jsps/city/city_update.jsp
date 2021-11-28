@@ -22,7 +22,7 @@
   
   <body>
   <h1>Update city</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/CityServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update CityName:	<input type="text" name="CityName" value="${form.CityName }"/>
 	<span style="color: red; font-weight: 900">${errors.CityName }</span>

@@ -23,17 +23,11 @@
   <body>
   <h1>Read city</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/jsps/city/city_read_output.jsp'/>" method="post">
+<form action="<c:url value='/CityServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	CityName    :<input type="text" name="CityName" value="${form.CityName }"/>
 	<span style="color: red; font-weight: 900">${errors.CityName }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read City"/>
 </form>
   </body>

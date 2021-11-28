@@ -24,13 +24,15 @@
   <h1>Read city Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	CityName:	<input type="text" name="CityName" value="${city.CityName }" disabled/>
+	CityName:	<input type="text" name="CityName" value="${city.cityName }" disabled/>
 	<br/>
-	Population：	<input type="text" name="Population" value="${city.Population }" disabled/>
+	Population：	<input type="text" name="Population" value="${city.population }" disabled/>
 	<br/>
-	MostUsedTransportation：	<input type="text" name="MostUsedTransportation" value="${city.MostUsedTransportation }" disabled/>
+	MostUsedTransportation：	<input type="text" name="MostUsedTransportation" value="${city.mostUsedTransportation }" disabled/>
 	<br/>
-	NumberOFactories：	<input type="text" name="NumberOFactories" value="${city.NumberOFactories }" disabled/>
+	NumberOFactories：	<input type="text" name="NumberOFactories" value="${city.factoryNumber }" disabled/>
+	<br/>
+	CityDate：	<input type="text" name="NumberOFactories" value="${city.cityDate }" disabled/>
 	<br/>
 </form>
 
