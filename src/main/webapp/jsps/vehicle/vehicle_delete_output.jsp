@@ -23,17 +23,24 @@
   <body>
   <h1>Delete vehicle</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/VehicleServletDelete'/>" method="post">
+
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
-	<br/>
+	<input type="hidden" name="VehicleType" value="${vehicle.vehicleType }"/>
+	<input type="hidden" name="method" value="delete"/>
+	<input type="hidden" name="VehicleEmissionType" value="${vehicle.vehicleEmissionType }"/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	VehicleType:	<input type="text" name="VehicleType" value="${vehicle.vehicleType }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	VehicleEmissionType:	<input type="text" name="VehicleEmissionType" value="${vehicle.vehicleEmissionType }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	GasMileage:	<input type="text" name="GasMileage" value="${vehicle.gasMileage }" disabled/>
+	<br/>
+	VehicleCity:	<input type="text" name="VehicleName" value="${vehicle.vehicleCity }" disabled/>
+	<br/>
+	VehicleDate:	<input type="text" name="VehicleDate" value="${vehicle.vehicleDate }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Vehicle"/>
 </form>
 
 </body>

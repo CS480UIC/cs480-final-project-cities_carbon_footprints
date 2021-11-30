@@ -24,6 +24,17 @@
     <url-pattern>/CityServletCreate</url-pattern>
   </servlet-mapping>
   
+    <servlet>
+    <description></description>
+    <display-name>VehicleServletCreate</display-name>
+    <servlet-name>VehicleServletCreate</servlet-name>
+    <servlet-class>vehicle.web.servlet.VehicleServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VehicleServletCreate</servlet-name>
+    <url-pattern>/VehicleServletCreate</url-pattern>
+  </servlet-mapping>
+  
   <servlet>
     <description></description>
     <display-name>Entity1ServletRead</display-name>
@@ -46,6 +57,16 @@
     <url-pattern>/CityServletRead</url-pattern>
   </servlet-mapping>
   
+    <servlet>
+    <description></description>
+    <display-name>VehicleServletRead</display-name>
+    <servlet-name>VehicleServletRead</servlet-name>
+    <servlet-class>vehicle.web.servlet.VehicleServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VehicleServletRead</servlet-name>
+    <url-pattern>/VehicleServletRead</url-pattern>
+  </servlet-mapping>
   
   
     <servlet>
@@ -70,6 +91,17 @@
     <url-pattern>/CityServletUpdate</url-pattern>
   </servlet-mapping>
   
+    <servlet>
+    <description></description>
+    <display-name>VehicleServletUpdate</display-name>
+    <servlet-name>VehicleServletUpdate</servlet-name>
+    <servlet-class>vehicle.web.servlet.VehicleServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VehicleServletUpdate</servlet-name>
+    <url-pattern>/VehicleServletUpdate</url-pattern>
+  </servlet-mapping>
+  
   
     <servlet>
     <description></description>
@@ -91,6 +123,17 @@
   <servlet-mapping>
     <servlet-name>CityServletDelete</servlet-name>
     <url-pattern>/CityServletDelete</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>VehicleServletDelete</display-name>
+    <servlet-name>VehicleServletDelete</servlet-name>
+    <servlet-class>vehicle.web.servlet.VehicleServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VehicleServletDelete</servlet-name>
+    <url-pattern>/VehicleServletDelete</url-pattern>
   </servlet-mapping>
   
   <servlet>

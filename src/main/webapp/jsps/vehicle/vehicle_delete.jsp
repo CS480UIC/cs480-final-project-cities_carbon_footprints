@@ -22,10 +22,13 @@
   
   <body>
   <h1>Delete vehicle</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/VehicleServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete VehicleID   :<input type="text" name="vehicleID" value="${form.VehicleID }"/>
-	<span style="color: red; font-weight: 900">${errors.VehicleID }</span>
+	VehicleType    :<input type="text" name="VehicleType" value="${form.VehicleType }"/>
+	<span style="color: red; font-weight: 900">${errors.VehicleType }</span>
+	<br/>
+	VehicleEmissionType    :<input type="text" name="VehicleEmissionType" value="${form.VehicleEmissionType }"/>
+	<span style="color: red; font-weight: 900">${errors.VehicleEmissionType }</span>
 	<br/>
 	<input type="submit" value="Delete vehicle"/>
 </form>
