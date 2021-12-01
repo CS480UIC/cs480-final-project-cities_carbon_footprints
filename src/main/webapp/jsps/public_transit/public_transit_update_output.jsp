@@ -24,25 +24,31 @@
   <h1>Update public_transit</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	TransitType:	<input type="text" name="TransitType" value="${pt.transitType }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	TransitEmissionType:	<input type="text" name="TransitEmissionType" value="${pt.transitEmissionType }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	TotalUsage:	<input type="text" name="TotalUsage" value="${pt.totalUsage }" disabled/>
+	<br/>
+	TransitCity:	<input type="text" name="TransitCity" value="${pt.transitCity }" disabled/>
+	<br/>
+	TransitDate:	<input type="text" name="TransitDate" value="${pt.transitDate }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/PublicTransitServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+				<input type="hidden" name="TransitType" value="${pt.transitType }"/>
+				<input type="hidden" name="method" value="update"/>
+				<input type="hidden" name="TransitEmissionType" value="${pt.transitEmissionType }"/>
+				
+	TotalUsage:	<input type="text" name="TotalUsage" value="${form.TotalUsage }"/>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	TransitCity:	<input type="text" name="TransitCity" value="${form.TransitCity }"/>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	TransitDate:	<input type="text" name="TransitDate" value="${form.TransitDate }"/>
+	<br/>
+	<input type="submit" value="Update Public Transit"/>
 </form>
 
 </body>

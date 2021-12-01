@@ -23,17 +23,15 @@
   <body>
   <h1>Read public_transit</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/jsps/public_transit/public_transit_read_output.jsp'/>" method="post">
+<form action="<c:url value='/PublicTransitServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	TransitID    :<input type="text" name="TransitID" value="${form.TransitID }"/>
-	<span style="color: red; font-weight: 900">${errors.TransitID }</span>
+	TransitType    :<input type="text" name="TransitType" value="${form.TransitType }"/>
+	<span style="color: red; font-weight: 900">${errors.TransitType }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	
+	TransitEmissionType    :<input type="text" name="TransitEmissionType" value="${form.TransitEmissionType }"/>
+	<span style="color: red; font-weight: 900">${errors.TransitEmissionType }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read public_transit"/>
 </form>
   </body>

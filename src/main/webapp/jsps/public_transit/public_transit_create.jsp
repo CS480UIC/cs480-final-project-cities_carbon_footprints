@@ -22,24 +22,21 @@
   
   <body>
   <h1>Create a public_transit</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	TransitID:	<input type="text" name="TransitID" value="${form.TransitID }"/>
-	<span style="color: red; font-weight: 900">${errors.TransitID }</span>
+<form action="<c:url value='/PublicTransitServletCreate'/>" method="post">
+	TransitType:	<input type="text" name="TransitType" value="${form.TransitType }"/>
+	<span style="color: red; font-weight: 900">${errors.TransitType }</span>
+	<br/>
+	TransitEmissionType：	<input type="text" name="TransitEmissionType" value="${form.TransitEmissionType }"/>
+	<span style="color: red; font-weight: 900">${errors.TransitEmissionType }</span>
 	<br/>
 	TotalUsage：	<input type="text" name="TotalUsage" value="${form.TotalUsage }"/>
 	<span style="color: red; font-weight: 900">${errors.TotalUsage }</span>
 	<br/>
-	TotalNumberOfUsers：	<input type="text" name="TotalNumberOfUsers" value="${form.TotalNumberOfUsers }"/>
-	<span style="color: red; font-weight: 900">${errors.TotalNumberOfUsers }</span>
-	<br/>
-	TransitCity：		<input type="text" name="TransitCity" value="${form.TransitCity }"/>
+	TransitCity：	<input type="text" name="TransitCity" value="${form.TransitCity }"/>
 	<span style="color: red; font-weight: 900">${errors.TransitCity }</span>
 	<br/>
-	TransitType：		<input type="text" name="TransitType" value="${form.TransitType }"/>
-	<span style="color: red; font-weight: 900">${errors.TransitType }</span>
-	<br/>
-	TransitEmissionType：		<input type="text" name="TransitEmissionType" value="${form.TransitEmissionType }"/>
-	<span style="color: red; font-weight: 900">${errors.TransitEmissionType }</span>
+	TransitDate：	<input type="text" name="TransitDate" value="${form.TransitDate }"/>
+	<span style="color: red; font-weight: 900">${errors.TransitDate }</span>
 	<br/>
 	<input type="submit" value="Create a public_transit"/>
 </form>

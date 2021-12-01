@@ -113,7 +113,7 @@ CREATE TABLE `factory` (
   KEY `factory_city` (`factory_city`),
   KEY `factory_emission_type` (`factory_emission_type`),
   CONSTRAINT `factory_ibfk_1` FOREIGN KEY (`factory_city`) REFERENCES `city` (`city_name`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `factory_ibfk_2` FOREIGN KEY (`factory_emission_type`) REFERENCES `carbon_emission` (`emission_type`) ON DELETE RESTRICT ON UPDATE RESTRICT
+  CONSTRAINT `factory_ibfk_2` FOREIGN KEY (`factory_emission_type`) REFERENCES `carbon_emission` (`emission_type`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -146,7 +146,7 @@ CREATE TABLE `public_transit` (
   KEY `transit_city` (`transit_city`),
   KEY `transit_emission_type` (`transit_emission_type`),
   CONSTRAINT `public_transit_ibfk_1` FOREIGN KEY (`transit_city`) REFERENCES `city` (`city_name`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `public_transit_ibfk_2` FOREIGN KEY (`transit_emission_type`) REFERENCES `carbon_emission` (`emission_type`) ON DELETE RESTRICT ON UPDATE RESTRICT
+  CONSTRAINT `public_transit_ibfk_2` FOREIGN KEY (`transit_emission_type`) REFERENCES `carbon_emission` (`emission_type`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -226,4 +226,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-11 17:07:19
+-- Dump completed on 2021-11-30 21:38:14
