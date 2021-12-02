@@ -15,6 +15,7 @@ import java.util.Scanner;
 
 import org.apache.jasper.tagplugins.jstl.core.Url;
 
+import city.domain.City;
 import user.domain.User;
 
 
@@ -62,5 +63,30 @@ public class InitDao {
 		} catch(SQLException | FileNotFoundException e) {
 			throw new RuntimeException(e);
 		}
-	}		
+	}	
+	
+	public List<Object> findAllCitiesIn2021() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/cities_carbon_footprints", MySQL_user, MySQL_password);
+			String sql = "SELECT * FROM city WHERE YEAR(city_date) = '2021'";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				City city = new City();
+	    		city.setCityName(resultSet.getString("city_name"));
+	    		city.setPopulation(resultSet.getInt("population"));
+	    		city.setMostUsedTransportation(resultSet.getString("most_used_transportation"));
+	    		city.setFactoryNumber(resultSet.getInt("factory_number"));
+	    		city.setCityDate(resultSet.getString("city_date"));
+	    		list.add(city);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
 }

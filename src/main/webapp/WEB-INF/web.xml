@@ -237,6 +237,19 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>findCitiesInYear2021</display-name>
+    <servlet-name>findCitiesInYear2021</servlet-name>
+    
+    <servlet-class>init.web.servlet.findCitiesInYear2021</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findCitiesInYear2021</servlet-name>
+    <url-pattern>/findCitiesInYear2021</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

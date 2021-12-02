@@ -13,4 +13,8 @@ public class InitService {
 	public void intializeDB() throws InitException, ClassNotFoundException, InstantiationException, IllegalAccessException{
 		initDao.intialize();
 	}
+	
+	public List<Object> findAllCitiesIn2021() throws InitException, ClassNotFoundException, InstantiationException, IllegalAccessException{
+		return initDao.findAllCitiesIn2021();
+	}
 }
