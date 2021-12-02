@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>carbon_emission Create</title>
+    <title>Carbon_emission Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,21 +21,22 @@
   </head>
   
   <body>
-  <h1>carbon_emission Create</h1>
-<form action="<c:url value='/carbon_emissionServletCreate'/>" method="post">
-	EmissionType    :<input type="text" name="emissiontype" value="${form.emissiontype }"/>
-	<span style="color: red; font-weight: 900">${errors.emissiontype }</span>
+  <h1>Carbon_emission Create</h1>
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+	EmissionType    :<input type="text" name="username" value="${form.username }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	VehicleEmissionPercent：<input type="text" name="vehicleemissionpercent" value="${form.vehicleemissionpercent }"/>
-	<span style="color: red; font-weight: 900">${errors.vehicleemissionpercent }</span>
+	Vehicle：<input type="password" name="password" value="${form.password }"/>
+	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	TransitEmissionPercent	：<input type="text" name="transitemissionpercent" value="${form.transitemissionpercent }"/>
-	<span style="color: red; font-weight: 900">${errors.transitemissionpercent }</span>
+	Transit	：<input type="text" name="email" value="${form.email }"/>
+	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	FactoryEmissionPercent	：<input type="text" name="factoryemissionpercent" value="${form.factoryemissionpercent }"/>
-	<span style="color: red; font-weight: 900">${errors.factoryemissionpercent }</span>
+	Factory	：<input type="text" name="name" value="${form.name }"/>
+	<span style="color: red; font-weight: 900">${errors.name }</span>
 	<br/>
-	<input type="submit" value="Create carbon_emission "/>
+	<input type="submit" value="Create eMISSION"/>
 </form>
   </body>
 </html>
+

@@ -23,10 +23,10 @@
   <body>
   <h1>Read carbon_emission</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/carbon_emissionServletRead'/>" method="post">
+<form action="<c:url value='/Entity1ServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	EmissionType    :<input type="text" name="emissiontype" value="${form.emissiontype }"/>
-	<span style="color: red; font-weight: 900">${errors.emissiontype }</span>
+	EmissionType    :<input type="text" name="username" value="${form.username }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>

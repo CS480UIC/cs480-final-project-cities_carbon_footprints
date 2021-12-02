@@ -24,7 +24,7 @@
   <h1>Update carbon_emission</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	EmissionType    :<input type="text" name="emissiontype1" value="${carbon_emission.emissiontype }" disabled/>
+	EmissionType    :<input type="text" name="username1" value="${carbon_emission.emissiontype }" disabled/>
 	<br/>
 	VehicleEmissionPercent	：<input type="text" name="Vehicleemissionpercent1" value="${carbon_emission.vehicleemissionpercent }" disabled/>
 	<br/>
@@ -37,7 +37,7 @@
 <h1>Update the values below</h1>
 <form action="<c:url value='/FactoryServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="emissiontype" value="${carbon_emission.emissiontype }"/>
+				<input type="hidden" name="username" value="${carbon_emission.emissiontype }"/>
 	VehicleEmissionPercent：<input type="text" name="Vehicleemissionpercent" value="${form.vehicleemissionpercent }"/>
 	<span style="color: red; font-weight: 900">${errors.vehicleemissionpercent }</span>
 	<br/>

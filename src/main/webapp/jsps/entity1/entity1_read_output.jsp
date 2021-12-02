@@ -24,11 +24,13 @@
   <h1>Read Entity Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	1   :<input type="text" name="username" value="${entity1.username }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	2：<input type="text" name="password" value="${entity1.password }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	3	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	<br/>
+	4	：<input type="text" name="name" value="${entity1.name }" disabled/>
 	<br/>
 </form>
 

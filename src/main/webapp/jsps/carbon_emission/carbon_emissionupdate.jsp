@@ -22,9 +22,9 @@
   
   <body>
   <h1>Update carbon_emission</h1>
-<form action="<c:url value='/carbon_emissionServletUpdate'/>" method="post">
+<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update carbon_emission   :<input type="text" name="emissiontype" value="${form.emissiontype }"/>
+	Update carbon_emission   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.emissiontype }</span>
 	<br/>
 	<input type="submit" value="Update carbon_emission"/>

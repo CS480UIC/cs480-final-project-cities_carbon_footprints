@@ -22,9 +22,9 @@
   
   <body>
   <h1>Delete carbon_emission</h1>
-<form action="<c:url value='/carbon_emissionServletDelete'/>" method="post">
+<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	EmissionType   :<input type="text" name="emissiontype" value="${form.emissiontype }"/>
+	EmissionType   :<input type="text" name="username" value="${form.emissiontype }"/>
 	<span style="color: red; font-weight: 900">${errors.emissiontype }</span>
 	<br/>
 	<input type="submit" value="Delete carbon_emission "/>

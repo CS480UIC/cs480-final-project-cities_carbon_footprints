@@ -14,6 +14,7 @@ public class Entity1 {
 	private String username;
 	private String password; 
 	private String email;
+	private String name;
 	
 	
 	public String getUsername() {
@@ -44,5 +45,15 @@ public class Entity1 {
 	public String toString() {
 		return "User [ username=" + username + ", password="
 				+ password + ", email=" + email +"]";
+	}
+
+	public String getName() {
+		return name;
+		
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	
 	}
 }

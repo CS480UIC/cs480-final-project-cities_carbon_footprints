@@ -22,7 +22,7 @@
   
   <body>
   <h1>Factory Create</h1>
-<form action="<c:url value='/factoryServletCreate'/>" method="post">
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 	FactoryID	：<input type="text" name="factoryid" value="${form.factoryid }"/>
 	<span style="color: red; font-weight: 900">${errors.factoryid }</span>
 	<br/>

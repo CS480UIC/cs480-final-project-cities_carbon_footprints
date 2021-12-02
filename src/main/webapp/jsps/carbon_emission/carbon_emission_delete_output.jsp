@@ -23,7 +23,7 @@
   <body>
   <h1>Delete carbon_emission</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/carbon_emissionServletDelete'/>" method="post">
+<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
 		<input type="hidden" name="emissiontype" value="${carbon_emission.emissiontype }"/>
 	 VehicleEmissionPercent  :<input type="text" name="vehicleemissionpercent" value="${carbon_emission.vehicleemissionpercent }" disabled/>

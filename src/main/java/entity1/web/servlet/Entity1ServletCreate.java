@@ -52,11 +52,12 @@ public class Entity1ServletCreate extends HttpServlet {
 		}
 		form.setUsername(info.get(0));
 		form.setPassword(info.get(1));
-		form.setEmail(info.get(2));		
+		form.setEmail(info.get(2));
+		form.setName(info.get(3));
 		
 		try {
 			entity1service.create(form);
-			response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
+			response.sendRedirect( request.getContextPath() + "/jsps/top.jsp");
 			
 		} catch (ClassNotFoundException | Entity1Exception e) {
 			e.printStackTrace();

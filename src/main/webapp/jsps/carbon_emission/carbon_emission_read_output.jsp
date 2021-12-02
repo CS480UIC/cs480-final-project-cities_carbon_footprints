@@ -30,7 +30,7 @@
 	<br/>
 	FactoryEmissionPercent	：<input type="text" name="factoryemissionpercent" value="${carbon_emission.factoryemissionpercent }" disabled/>
 	<br/>
-	EmissionType	：<input type="text" name="emissiontype" value="${carbon_emission.emissiontype }" disabled/>
+	EmissionType	：<input type="text" name="username" value="${carbon_emission.emissiontype }" disabled/>
 	<br/>
 </form>
 
