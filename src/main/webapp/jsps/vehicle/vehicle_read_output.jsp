@@ -24,13 +24,15 @@
   <h1>Read vehicle Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	VehicleName:	<input type="text" name="VehicleName" value="${vehicle.VehicleName }" disabled/>
+	VehicleType:	<input type="text" name="VehicleType" value="${vehicle.vehicleType }" disabled/>
 	<br/>
-	Population：	<input type="text" name="Population" value="${vehicle.Population }" disabled/>
+	VehicleEmissionType:	<input type="text" name="VehicleEmissionType" value="${vehicle.vehicleEmissionType }" disabled/>
 	<br/>
-	MostUsedTransportation：	<input type="text" name="MostUsedTransportation" value="${vehicle.MostUsedTransportation }" disabled/>
+	GasMileage:	<input type="text" name="GasMileage" value="${vehicle.gasMileage }" disabled/>
 	<br/>
-	NumberOFactories：	<input type="text" name="NumberOFactories" value="${vehicle.NumberOFactories }" disabled/>
+	VehicleCity:	<input type="text" name="VehicleName" value="${vehicle.vehicleCity }" disabled/>
+	<br/>
+	VehicleDate:	<input type="text" name="VehicleDate" value="${vehicle.vehicleDate }" disabled/>
 	<br/>
 </form>
 

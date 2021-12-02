@@ -22,7 +22,7 @@
   
   <body>
   <h1>Delete city</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/CityServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete CityName   :<input type="text" name="CityName" value="${form.CityName }"/>
 	<span style="color: red; font-weight: 900">${errors.CityName }</span>

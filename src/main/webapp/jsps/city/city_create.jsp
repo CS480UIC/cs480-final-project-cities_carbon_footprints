@@ -22,7 +22,7 @@
   
   <body>
   <h1>Create a city</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/CityServletCreate'/>" method="post">
 	CityName:	<input type="text" name="CityName" value="${form.CityName }"/>
 	<span style="color: red; font-weight: 900">${errors.CityName }</span>
 	<br/>
@@ -34,6 +34,9 @@
 	<br/>
 	NumberOfFactories：	<input type="text" name="NumberOfFactories" value="${form.NumberOfFactories }"/>
 	<span style="color: red; font-weight: 900">${errors.NumberOfFactories }</span>
+	<br/>
+	CityDate：	<input type="text" name="CityDate" value="${form.CityDate }"/>
+	<span style="color: red; font-weight: 900">${errors.CityDate }</span>
 	<br/>
 	<input type="submit" value="Create a city"/>
 </form>

@@ -23,17 +23,22 @@
   <body>
   <h1>Delete public_transit</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+<form action="<c:url value='/PublicTransitServletDelete'/>" method="post">
+		<input type="hidden" name="method" value="delete"/>
+				<input type="hidden" name="TransitType" value="${pt.transitType }"/>
+				<input type="hidden" name="method" value="delete"/>
+				<input type="hidden" name="TransitEmissionType" value="${pt.transitEmissionType }"/>
+	TransitType:	<input type="text" name="TransitType" value="${pt.transitType }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	TransitEmissionType:	<input type="text" name="TransitEmissionType" value="${pt.transitEmissionType }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	TotalUsage:	<input type="text" name="TotalUsage" value="${pt.totalUsage }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	TransitCity:	<input type="text" name="TransitCity" value="${pt.transitCity }" disabled/>
+	<br/>
+	TransitDate:	<input type="text" name="TransitDate" value="${pt.transitDate }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Public Transit"/>
 </form>
 
 </body>

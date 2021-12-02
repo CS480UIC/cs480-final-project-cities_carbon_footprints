@@ -23,17 +23,15 @@
   <body>
   <h1>Read vehicle</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/jsps/vehicle/vehicle_read_output.jsp'/>" method="post">
+<form action="<c:url value='/VehicleServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	VehicleID    :<input type="text" name="VehicleID" value="${form.VehicleID }"/>
-	<span style="color: red; font-weight: 900">${errors.VehicleID }</span>
+	VehicleType    :<input type="text" name="VehicleType" value="${form.VehicleType }"/>
+	<span style="color: red; font-weight: 900">${errors.VehicleType }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	
+	VehicleEmissionType    :<input type="text" name="VehicleEmissionType" value="${form.VehicleEmissionType }"/>
+	<span style="color: red; font-weight: 900">${errors.VehicleEmissionType }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read vehicle"/>
 </form>
   </body>

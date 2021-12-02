@@ -22,10 +22,14 @@
   
   <body>
   <h1>Delete public_transit</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/PublicTransitServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete TransitID   :<input type="text" name="TransitID" value="${form.TransitID }"/>
-	<span style="color: red; font-weight: 900">${errors.TransitID }</span>
+	TransitType    :<input type="text" name="TransitType" value="${form.TransitType }"/>
+	<span style="color: red; font-weight: 900">${errors.TransitType }</span>
+	<br/>
+	
+	TransitEmissionType    :<input type="text" name="TransitEmissionType" value="${form.TransitEmissionType }"/>
+	<span style="color: red; font-weight: 900">${errors.TransitEmissionType }</span>
 	<br/>
 	<input type="submit" value="Delete public_transit"/>
 </form>

@@ -22,10 +22,14 @@
   
   <body>
   <h1>Update vehicle</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/VehicleServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update VehicleID   :<input type="text" name="VehicleID" value="${form.VehicleID }"/>
-	<span style="color: red; font-weight: 900">${errors.VehicleID }</span>
+	<input type="hidden" name="method" value="regist"/>
+	VehicleType    :<input type="text" name="VehicleType" value="${form.VehicleType }"/>
+	<span style="color: red; font-weight: 900">${errors.VehicleType }</span>
+	<br/>
+	VehicleEmissionType    :<input type="text" name="VehicleEmissionType" value="${form.VehicleEmissionType }"/>
+	<span style="color: red; font-weight: 900">${errors.VehicleEmissionType }</span>
 	<br/>
 	<input type="submit" value="Update vehicle"/>
 </form>

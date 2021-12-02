@@ -23,17 +23,20 @@
   <body>
   <h1>Delete city</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/CityServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="CityName" value="${city.cityName }"/>
+	CityName:	<input type="text" name="CityName" value="${city.cityName }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Population：	<input type="text" name="Population" value="${city.population }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	MostUsedTransportation：	<input type="text" name="MostUsedTransportation" value="${city.mostUsedTransportation }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	NumberOFactories：	<input type="text" name="NumberOFactories" value="${city.factoryNumber }" disabled/>
+	<br/>
+	CityDate：	<input type="text" name="NumberOFactories" value="${city.cityDate }" disabled/>
+	<br/>
+	<input type="submit" value="Delete City"/>
 </form>
 
 </body>

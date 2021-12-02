@@ -24,13 +24,15 @@
   <h1>Read public_transit Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	public_transitName:	<input type="text" name="public_transitName" value="${public_transit.public_transitName }" disabled/>
+	TransitType:	<input type="text" name="TransitType" value="${pt.transitType }" disabled/>
 	<br/>
-	Population：	<input type="text" name="Population" value="${public_transit.Population }" disabled/>
+	TransitEmissionType:	<input type="text" name="TransitEmissionType" value="${pt.transitEmissionType }" disabled/>
 	<br/>
-	MostUsedTransportation：	<input type="text" name="MostUsedTransportation" value="${public_transit.MostUsedTransportation }" disabled/>
+	TotalUsage:	<input type="text" name="TotalUsage" value="${pt.totalUsage }" disabled/>
 	<br/>
-	NumberOFactories：	<input type="text" name="NumberOFactories" value="${public_transit.NumberOFactories }" disabled/>
+	TransitCity:	<input type="text" name="TransitCity" value="${pt.transitCity }" disabled/>
+	<br/>
+	TransitDate:	<input type="text" name="TransitDate" value="${pt.transitDate }" disabled/>
 	<br/>
 </form>
 

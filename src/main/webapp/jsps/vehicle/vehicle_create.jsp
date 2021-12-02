@@ -22,24 +22,21 @@
   
   <body>
   <h1>Create a vehicle</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/VehicleServletCreate'/>" method="post">
 	VehicleType:	<input type="text" name="VehicleType" value="${form.VehicleType }"/>
 	<span style="color: red; font-weight: 900">${errors.VehicleType }</span>
 	<br/>
-	VehicleID：	<input type="text" name="VehicleID" value="${form.VehicleID }"/>
-	<span style="color: red; font-weight: 900">${errors.VehicleID }</span>
+	VehicleEmissionType：	<input type="text" name="VehicleEmissionType" value="${form.VehicleEmissionType }"/>
+	<span style="color: red; font-weight: 900">${errors.VehicleEmissionType }</span>
 	<br/>
-	TotalMilesPerGallon：	<input type="text" name="TotalMilesPerGallon" value="${form.TotalMilesPerGallon }"/>
-	<span style="color: red; font-weight: 900">${errors.TotalMilesPerGallon }</span>
-	<br/>
-	TotalNumberOfDrivers：	<input type="text" name="TotalNumberOfDrivers" value="${form.TotalNumberOfDrivers }"/>
-	<span style="color: red; font-weight: 900">${errors.TotalNumberOfDrivers }</span>
+	GasMileage：	<input type="text" name="GasMileage" value="${form.GasMileage }"/>
+	<span style="color: red; font-weight: 900">${errors.GasMileage }</span>
 	<br/>
 	VehicleCity：	<input type="text" name="VehicleCity" value="${form.VehicleCity }"/>
 	<span style="color: red; font-weight: 900">${errors.VehicleCity }</span>
 	<br/>
-	VehicleEmissionType：	<input type="text" name="VehicleEmissionType" value="${form.VehicleEmissionType }"/>
-	<span style="color: red; font-weight: 900">${errors.VehicleEmissionType }</span>
+	VehicleDate：	<input type="text" name="VehicleDate" value="${form.VehicleDate }"/>
+	<span style="color: red; font-weight: 900">${errors.VehicleDate }</span>
 	<br/>
 	<input type="submit" value="Create a vehicle"/>
 </form>
