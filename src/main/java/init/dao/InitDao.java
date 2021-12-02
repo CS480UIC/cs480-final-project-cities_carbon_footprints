@@ -17,6 +17,7 @@ import org.apache.jasper.tagplugins.jstl.core.Url;
 
 import city.domain.City;
 import user.domain.User;
+import vehicle.domain.Vehicle;
 
 
 
@@ -81,6 +82,31 @@ public class InitDao {
 	    		city.setFactoryNumber(resultSet.getInt("factory_number"));
 	    		city.setCityDate(resultSet.getString("city_date"));
 	    		list.add(city);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+	
+	public List<Object> findChicagoVehicles() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/cities_carbon_footprints", MySQL_user, MySQL_password);
+			String sql = "SELECT LOWER(vehicle_type), vehicle_city, vehicle_emission_type, gas_mileage, vehicle_date FROM vehicle WHERE vehicle_city = 'Chicago'";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Vehicle vehicle = new Vehicle();
+				vehicle.setVehicleType(resultSet.getString("LOWER(vehicle_type)"));
+				vehicle.setVehicleEmissionType(resultSet.getString("vehicle_emission_type"));
+				vehicle.setGasMileage(resultSet.getFloat("gas_mileage"));
+				vehicle.setVehicleCity(resultSet.getString("vehicle_city"));
+				vehicle.setVehicleDate(resultSet.getString("vehicle_date"));
+	    		list.add(vehicle);
 			 }
 			connect.close();
 		} catch(SQLException e) {

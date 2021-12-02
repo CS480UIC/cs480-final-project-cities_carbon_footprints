@@ -17,4 +17,8 @@ public class InitService {
 	public List<Object> findAllCitiesIn2021() throws InitException, ClassNotFoundException, InstantiationException, IllegalAccessException{
 		return initDao.findAllCitiesIn2021();
 	}
+	
+	public List<Object> findChicagoVehicles() throws InitException, ClassNotFoundException, InstantiationException, IllegalAccessException{
+		return initDao.findChicagoVehicles();
+	}
 }

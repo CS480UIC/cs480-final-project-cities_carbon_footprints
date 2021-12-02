@@ -250,6 +250,18 @@
     <url-pattern>/findCitiesInYear2021</url-pattern>
   </servlet-mapping>
   
+      <servlet>
+    <description></description>
+    <display-name>findChicagoVehicles</display-name>
+    <servlet-name>findChicagoVehicles</servlet-name>
+    
+    <servlet-class>init.web.servlet.findChicagoVehicles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findChicagoVehicles</servlet-name>
+    <url-pattern>/findChicagoVehicles</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>
