@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>CS480 Demo</display-name>
+    <servlet>
+    <description></description>
+    <display-name>Entity1ServletCreate</display-name>
+    <servlet-name>Entity1ServletCreate</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletCreate</servlet-name>
+    <url-pattern>/Entity1ServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CityServletCreate</display-name>
+    <servlet-name>CityServletCreate</servlet-name>
+    <servlet-class>city.web.servlet.CityServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CityServletCreate</servlet-name>
+    <url-pattern>/CityServletCreate</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>VehicleServletCreate</display-name>
+    <servlet-name>VehicleServletCreate</servlet-name>
+    <servlet-class>vehicle.web.servlet.VehicleServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VehicleServletCreate</servlet-name>
+    <url-pattern>/VehicleServletCreate</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>PublicTransitServletCreate</display-name>
+    <servlet-name>PublicTransitServletCreate</servlet-name>
+    <servlet-class>public_transit.web.servlet.PublicTransitServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PublicTransitServletCreate</servlet-name>
+    <url-pattern>/PublicTransitServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Entity1ServletRead</display-name>
+    <servlet-name>Entity1ServletRead</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletRead</servlet-name>
+    <url-pattern>/Entity1ServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CityServletRead</display-name>
+    <servlet-name>CityServletRead</servlet-name>
+    <servlet-class>city.web.servlet.CityServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CityServletRead</servlet-name>
+    <url-pattern>/CityServletRead</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>VehicleServletRead</display-name>
+    <servlet-name>VehicleServletRead</servlet-name>
+    <servlet-class>vehicle.web.servlet.VehicleServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VehicleServletRead</servlet-name>
+    <url-pattern>/VehicleServletRead</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>PublicTransitServletRead</display-name>
+    <servlet-name>PublicTransitServletRead</servlet-name>
+    <servlet-class>public_transit.web.servlet.PublicTransitServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PublicTransitServletRead</servlet-name>
+    <url-pattern>/PublicTransitServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>Entity1ServletUpdate</display-name>
+    <servlet-name>Entity1ServletUpdate</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletUpdate</servlet-name>
+    <url-pattern>/Entity1ServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CityServletUpdate</display-name>
+    <servlet-name>CityServletUpdate</servlet-name>
+    <servlet-class>city.web.servlet.CityServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CityServletUpdate</servlet-name>
+    <url-pattern>/CityServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>VehicleServletUpdate</display-name>
+    <servlet-name>VehicleServletUpdate</servlet-name>
+    <servlet-class>vehicle.web.servlet.VehicleServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VehicleServletUpdate</servlet-name>
+    <url-pattern>/VehicleServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>PublicTransitServletUpdate</display-name>
+    <servlet-name>PublicTransitServletUpdate</servlet-name>
+    <servlet-class>public_transit.web.servlet.PublicTransitServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PublicTransitServletUpdate</servlet-name>
+    <url-pattern>/PublicTransitServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>Entity1ServletDelete</display-name>
+    <servlet-name>Entity1ServletDelete</servlet-name>
+    <servlet-class>entity1.web.servlet.Entity1ServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Entity1ServletDelete</servlet-name>
+    <url-pattern>/Entity1ServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CityServletDelete</display-name>
+    <servlet-name>CityServletDelete</servlet-name>
+    <servlet-class>city.web.servlet.CityServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CityServletDelete</servlet-name>
+    <url-pattern>/CityServletDelete</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>VehicleServletDelete</display-name>
+    <servlet-name>VehicleServletDelete</servlet-name>
+    <servlet-class>vehicle.web.servlet.VehicleServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VehicleServletDelete</servlet-name>
+    <url-pattern>/VehicleServletDelete</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>PublicTransitServletDelete</display-name>
+    <servlet-name>PublicTransitServletDelete</servlet-name>
+    <servlet-class>public_transit.web.servlet.PublicTransitServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PublicTransitServletDelete</servlet-name>
+    <url-pattern>/PublicTransitServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletRegister</display-name>
+    <servlet-name>UserServletRegister</servlet-name>
+    <servlet-class>user.web.servlet.UserServletRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletRegister</servlet-name>
+    <url-pattern>/UserServletRegister</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InitializeDB</display-name>
+    <servlet-name>InitializeDB</servlet-name>
+    <servlet-class>init.web.servlet.InitializeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitializeDB</servlet-name>
+    <url-pattern>/InitializeDB</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletLogin</display-name>
+    <servlet-name>UserServletLogin</servlet-name>
+    <servlet-class>user.web.servlet.UserServletLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletLogin</servlet-name>
+    <url-pattern>/UserServletLogin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletLogout</display-name>
+    <servlet-name>UserServletLogout</servlet-name>
+    <servlet-class>user.web.servlet.UserServletLogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletLogout</servlet-name>
+    <url-pattern>/UserServletLogout</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>findAll</display-name>
+    <servlet-name>findAll</servlet-name>
+    
+    <servlet-class>user.web.servlet.findAll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findAll</servlet-name>
+    <url-pattern>/findAll</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>findCitiesInYear2021</display-name>
+    <servlet-name>findCitiesInYear2021</servlet-name>
+    
+    <servlet-class>init.web.servlet.findCitiesInYear2021</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findCitiesInYear2021</servlet-name>
+    <url-pattern>/findCitiesInYear2021</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>findChicagoVehicles</display-name>
+    <servlet-name>findChicagoVehicles</servlet-name>
+    
+    <servlet-class>init.web.servlet.findChicagoVehicles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findChicagoVehicles</servlet-name>
+    <url-pattern>/findChicagoVehicles</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

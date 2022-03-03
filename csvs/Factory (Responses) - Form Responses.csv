@@ -1,0 +1,6 @@
+factory_date,factory_id,factory_name,factory_city,factory_emission_type
+2021-04-13 22:34:01,1,HelloAuto,Chicago,CO
+2021-05-12 22:34:01,2,HardVehicle,Los Angeles,SA
+2021-05-18 22:34:01,3,FictionGaz,New York,NOx
+2021-09-15 22:34:01,4,RetroAuto,Portland,Natural
+2023-02-05 22:34:01,5,OOPFactory,Orlando,CO

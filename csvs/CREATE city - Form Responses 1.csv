@@ -1,0 +1,6 @@
+city_name,population,most_used_transportation,factory_number,city_date,city_id
+Chicago,1000000,Gas,300,2021-04-13 22:34:01,1
+Portland,800000,Train,100,2021-05-12 22:34:01,2
+Los Angeles,3000000,Electric,500,2021-05-18 22:34:01,3
+New York,4000000,Train,1000,2021-09-15 22:34:01,4
+Orlando,350000,Hybrid Vehicle,340,2023-02-05 22:34:01,5

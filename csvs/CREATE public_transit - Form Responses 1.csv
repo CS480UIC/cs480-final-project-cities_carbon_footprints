@@ -1,0 +1,6 @@
+total_usage,transit_city,transit_type,transit_emission_type,transit_date,transit_id
+0.05,Chicago,Walking,NOx,2021-04-12 22:34:01,1
+0.01,Portland,Biking,SA,2021-05-12 22:34:01,2
+0.2,New York,Train,CO,2021-05-18 22:34:01,3
+0.04,Orlando,Bus,CO,2021-09-15 22:34:01,4
+0.45,Los Angeles,Train,Natural,2023-02-05 22:34:01,5
